@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result Check</title>
+</head>
+<body>
+
+<h2>Enter Roll Number</h2>
+
+<input type="text" id="roll" placeholder="Roll Number"><br><br>
+<input type="text" id="captcha" placeholder="Enter 1234"><br><br>
+
+<button onclick="check()">Submit</button>
+
+<script>
+function check() {
+  var roll = document.getElementById("roll").value;
+  var captcha = document.getElementById("captcha").value;
+
+  if (roll === "2400709023" && captcha === "1234") {
+    window.location.href = "paper.html";
+  } else {
+    alert("Wrong Roll Number or Captcha");
+  }
+}
+</script>
+
+</body>
+</html>
